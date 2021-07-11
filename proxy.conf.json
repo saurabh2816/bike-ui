@@ -1,0 +1,12 @@
+/* This file tells the ng server that any requests that comes to /server it should forward it to localhost:8080 */
+{
+	"/server": {
+		"target": "http://localhost:8080",
+		"secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/server" : ""
+    }
+	}
+}
