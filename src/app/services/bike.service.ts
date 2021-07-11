@@ -17,5 +17,14 @@ export class BikeService {
     return this.http.get("/server/api/v1/bikes");
   }
 
+  getBike(id: number) {
+    return this.http.get("/serverr/api/v1/bikes/" + id)
+  }
+
+  createBike(bike) {
+    let body = JSON.stringify(bike);
+    return this.http.post("/server/api/v1/bikes", body, httpOptions);
+  }
+
 }
  
