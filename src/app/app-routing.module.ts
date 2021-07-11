@@ -6,12 +6,12 @@ import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   {
-    path: 'admin',
-    component: AdminComponent
+    path: '',
+    component: HomeComponent
   },
   {
-    path: 'home',
-    component: HomeComponent
+    path: 'admin',
+    component: AdminComponent
   }
 ];
 
